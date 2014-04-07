@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::get('/', function()
 {
     return Redirect::to('home.html');
@@ -38,7 +37,7 @@ Route::post('/contact.html', function()
     ContactUs::saveToDB($name, $email, $message);
 
     // b3d ma y7fz nrg3oh lsf7et elhome mslan
-    return Redirect::to('home.html');
+    return Redirect::to('contact.html');
 });
 
 Route::get('/login.html', function()
