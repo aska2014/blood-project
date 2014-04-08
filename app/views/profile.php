@@ -53,6 +53,7 @@
                         Gender: <?php echo $donor->gender; ?><br />
                         Blood type: <?php echo $donor->blood_type; ?><br />
                         Location: (<?php echo $donor->gps_latitude; ?> , <?php echo $donor->gps_longitude; ?>)
+                        <a href="logout">Logout</a>
                     </p>
                 </div><!--close sidebar_item-->
             </div><!--close sidebar-->
