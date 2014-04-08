@@ -3,11 +3,15 @@
 
 class DonorServiceController  extends BaseController {
 
+    protected $apiKey = 'IGJFDGXCV34';
+
     /**
      * Update donor location
      */
     public function getUpdateLocation()
     {
+        $this->checkApiKey();
+
         $lat = Input::get('gps_latitude');
         $lon = Input::get('gps_longitude');
         $mobile = Input::get('mobile');
@@ -29,6 +33,14 @@ class DonorServiceController  extends BaseController {
                 )'
             );
         }
+    }
+
+    /**
+     * @return bool
+     */
+    protected function checkApiKey()
+    {
+        return $this->apiKey === Input::get('key');
     }
 
 } 
