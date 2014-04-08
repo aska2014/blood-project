@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'akmo',
-			'username'  => 'root',
-			'password'  => '',
+            'database'  => 'speedupb_akmo',
+            'username'  => 'speedupb_kemo',
+            'password'  => '*&ADNSKYH$#A',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

@@ -116,3 +116,10 @@ Route::get('/logout', function()
 
 
 Route::controller('/web-services/donor', 'DonorServiceController');
+
+Route::get('/donor/all', function()
+{
+    $donors = DB::select('SELECT * FROM donor');
+
+    dd($donors);
+});
