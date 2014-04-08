@@ -26,7 +26,7 @@
       <file leaf-file-name="profile.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="47" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.45840707" vertical-offset="676" max-vertical-offset="1275">
+            <state line="54" column="116" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.4283186" vertical-offset="676" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -406,7 +406,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="47" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.45840707" vertical-offset="676" max-vertical-offset="1275">
+        <state line="54" column="116" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.4283186" vertical-offset="676" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>

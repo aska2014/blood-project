@@ -52,7 +52,7 @@
                         Address: <?php echo $donor->address; ?><br />
                         Gender: <?php echo $donor->gender; ?><br />
                         Blood type: <?php echo $donor->blood_type; ?><br />
-                        Location: (<?php echo $donor->gps_latitude; ?> , <?php echo $donor->gps_longitude; ?>)
+                        Location: (<?php echo $donor->gps_latitude; ?> , <?php echo $donor->gps_longitude; ?>)<br />
                         <a href="logout">Logout</a>
                     </p>
                 </div><!--close sidebar_item-->
