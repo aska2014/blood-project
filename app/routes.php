@@ -40,6 +40,24 @@ Route::post('/contact.html', function()
     return Redirect::to('contact.html');
 });
 
+
+Route::get('/about.html', function()
+{
+    return View::make('about');
+});
+
+
+Route::get('/team.html', function()
+{
+    return View::make('staff');
+});
+
+
+Route::get('/map.html', function()
+{
+    return View::make('map');
+});
+
 Route::get('/login.html', function()
 {
     // 7aga a5era

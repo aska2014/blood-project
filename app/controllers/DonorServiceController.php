@@ -10,7 +10,10 @@ class DonorServiceController  extends BaseController {
      */
     public function getUpdateLocation()
     {
-        $this->checkApiKey();
+        if(! $this->checkApiKey()) {
+
+            throw new Exception("Api key is not correct");
+        }
 
         $lat = Input::get('gps_latitude');
         $lon = Input::get('gps_longitude');
