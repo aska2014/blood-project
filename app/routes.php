@@ -134,3 +134,4 @@ Route::get('/logout', function()
 
 
 Route::controller('/web-services/donor', 'DonorServiceController');
+Route::controller('/web-services/bank', 'BankServiceController');

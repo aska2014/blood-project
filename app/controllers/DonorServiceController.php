@@ -1,20 +1,28 @@
 <?php
 
 
-class DonorServiceController  extends BaseController {
+class DonorServiceController  extends WebServiceController {
 
-    protected $apiKey = 'IGJFDGXCV34';
+    /**
+     * Get donor profile
+     */
+    public function getProfile()
+    {
+        $mobile = Input::get('mobile');
+
+        $profile = DB::select(
+            'SELECT donor.donor_id, full_name, gender, address, city_name, blood_type FROM donor
+            INNER JOIN donor_contact ON donor.donor_id = donor_contact.donor_id
+            WHERE donor_contact.contact_type = "mobile" AND donor_contact.content = "'.$mobile.'"');
+
+        return Response::json(count($profile) > 0 ? $profile[0] : null);
+    }
 
     /**
      * Update donor location
      */
     public function getUpdateLocation()
     {
-        if(! $this->checkApiKey()) {
-
-            throw new Exception("Api key is not correct");
-        }
-
         $lat = Input::get('gps_latitude');
         $lon = Input::get('gps_longitude');
         $mobile = Input::get('mobile');
@@ -36,14 +44,6 @@ class DonorServiceController  extends BaseController {
                 )'
             );
         }
-    }
-
-    /**
-     * @return bool
-     */
-    protected function checkApiKey()
-    {
-        return $this->apiKey === Input::get('key');
     }
 
 } 
