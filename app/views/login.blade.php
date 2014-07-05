@@ -39,10 +39,6 @@
             <div class="footer-left">
                 <a href="index.html"><img src="images/logo1.png" title="logo" /></a>
             </div>
-            <div class="footer-right">
-                <p>Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-            </div>
-            <div class="clear"> </div>
         </div>
     </div>
     <!---End-content---->
