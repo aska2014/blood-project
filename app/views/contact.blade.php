@@ -27,7 +27,7 @@
 				<div class="col span_2_of_3">
 				  <div class="contact-form">
 				  	<h3>Contact Us</h3>
-					    <form method="post" action="contact-post.html">
+					    <form method="post" action="contact.html">
 					    	<div>
 						    	<span><label>NAME</label></span>
 						    	<span><input name="userName" type="text" class="textbox"></span>
